@@ -1,0 +1,141 @@
+(dbconnect) C:\Step 4 Analytical ETL\eod-data-load>SUCCESS: The process with PID 23844 (child process of PID 19320) has been terminated.
+SUCCESS: The process with PID 19320 (child process of PID 19124) has been terminated.
+SUCCESS: The process with PID 19124 (child process of PID 20512) has been terminated.
+python etldriver.py
+21/03/18 12:21:07 ERROR Shell: Failed to locate the winutils binary in the hadoop binary path
+java.io.IOException: Could not locate executable null\bin\winutils.exe in the Hadoop binaries.
+        at org.apache.hadoop.util.Shell.getQualifiedBinPath(Shell.java:382)
+        at org.apache.hadoop.util.Shell.getWinUtilsPath(Shell.java:397)
+        at org.apache.hadoop.util.Shell.<clinit>(Shell.java:390)
+        at org.apache.hadoop.util.StringUtils.<clinit>(StringUtils.java:80)
+        at org.apache.hadoop.security.SecurityUtil.getAuthenticationMethod(SecurityUtil.java:611)
+        at org.apache.hadoop.security.UserGroupInformation.initialize(UserGroupInformation.java:274)
+        at org.apache.hadoop.security.UserGroupInformation.ensureInitialized(UserGroupInformation.java:262)
+        at org.apache.hadoop.security.UserGroupInformation.loginUserFromSubject(UserGroupInformation.java:807)
+        at org.apache.hadoop.security.UserGroupInformation.getLoginUser(UserGroupInformation.java:777)
+        at org.apache.hadoop.security.UserGroupInformation.getCurrentUser(UserGroupInformation.java:650)
+        at org.apache.spark.util.Utils$.$anonfun$getCurrentUserName$1(Utils.scala:2680)
+        at scala.Option.getOrElse(Option.scala:189)
+        at org.apache.spark.util.Utils$.getCurrentUserName(Utils.scala:2680)
+        at org.apache.spark.SecurityManager.<init>(SecurityManager.scala:79)
+        at org.apache.spark.deploy.SparkSubmit.secMgr$lzycompute$1(SparkSubmit.scala:368)
+        at org.apache.spark.deploy.SparkSubmit.secMgr$1(SparkSubmit.scala:368)
+        at org.apache.spark.deploy.SparkSubmit.$anonfun$prepareSubmitEnvironment$8(SparkSubmit.scala:376)
+        at scala.Option.map(Option.scala:230)
+        at org.apache.spark.deploy.SparkSubmit.prepareSubmitEnvironment(SparkSubmit.scala:376)
+        at org.apache.spark.deploy.SparkSubmit.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:871)
+        at org.apache.spark.deploy.SparkSubmit.doRunMain$1(SparkSubmit.scala:180)
+        at org.apache.spark.deploy.SparkSubmit.submit(SparkSubmit.scala:203)
+        at org.apache.spark.deploy.SparkSubmit.doSubmit(SparkSubmit.scala:90)
+        at org.apache.spark.deploy.SparkSubmit$$anon$2.doSubmit(SparkSubmit.scala:1007)
+        at org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:1016)
+        at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
+21/03/18 12:21:07 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+21/03/18 12:21:10 WARN MetricsSystem: Using default name SparkStatusTracker for source because neither spark.metrics.namespace nor spark.app.id is set.
+21/03/18 12:21:23 WARN ProcfsMetricsGetter: Exception when trying to compute pagesize, as a result reporting of ProcessTree metrics is stopped
+View job details at https://adb-4073974713364781.1.azuredatabricks.net/?o=4073974713364781#/setting/clusters/0317-203650-ring999/sparkUi
+View job details at https://adb-4073974713364781.1.azuredatabricks.net/?o=4073974713364781#/setting/clusters/0317-203650-ring999/sparkUi
+View job details at https://adb-4073974713364781.1.azuredatabricks.net/?o=4073974713364781#/setting/clusters/0317-203650-ring999/sparkUi
+View job details at https://adb-4073974713364781.1.azuredatabricks.net/?o=4073974713364781#/setting/clusters/0317-203650-ring999/sparkUi
+View job details at https://adb-4073974713364781.1.azuredatabricks.net/?o=4073974713364781#/setting/clusters/0317-203650-ring999/sparkUi
+View job details at https://adb-4073974713364781.1.azuredatabricks.net/?o=4073974713364781#/setting/clusters/0317-203650-ring999/sparkUi
+View job details at https://adb-4073974713364781.1.azuredatabricks.net/?o=4073974713364781#/setting/clusters/0317-203650-ring999/sparkUi
+View job details at https://adb-4073974713364781.1.azuredatabricks.net/?o=4073974713364781#/setting/clusters/0317-203650-ring999/sparkUi
+View job details at https://adb-4073974713364781.1.azuredatabricks.net/?o=4073974713364781#/setting/clusters/0317-203650-ring999/sparkUi
+View job details at https://adb-4073974713364781.1.azuredatabricks.net/?o=4073974713364781#/setting/clusters/0317-203650-ring999/sparkUi
+View job details at https://adb-4073974713364781.1.azuredatabricks.net/?o=4073974713364781#/setting/clusters/0317-203650-ring999/sparkUi
++----------+------+--------+-----------------------+------------+-------------------+-----------------+
+|trade_dt  |symbol|exchange|event_tm               |event_seq_nb|arrival_tm         |trade_pr         |
++----------+------+--------+-----------------------+------------+-------------------+-----------------+
+|2020-08-05|SYMA  |NASDAQ  |2020-08-05 06:38:50.046|10          |2020-08-05 05:30:00|77.77570455205036|
+|2020-08-05|SYMA  |NASDAQ  |2020-08-05 07:58:33.106|20          |2020-08-05 05:30:00|75.71522806406605|
+|2020-08-05|SYMA  |NASDAQ  |2020-08-05 09:09:24.38 |30          |2020-08-05 05:30:00|75.87925515076047|
++----------+------+--------+-----------------------+------------+-------------------+-----------------+
+only showing top 3 rows
+
+View job details at https://adb-4073974713364781.1.azuredatabricks.net/?o=4073974713364781#/setting/clusters/0317-203650-ring999/sparkUi
+View job details at https://adb-4073974713364781.1.azuredatabricks.net/?o=4073974713364781#/setting/clusters/0317-203650-ring999/sparkUi
++----------+------+--------+-----------------------+------------+-------------------+-----------------+--------+-----------------+--------+
+|trade_dt  |symbol|exchange|event_tm               |event_seq_nb|arrival_tm         |bid_pr           |bid_size|ask_pr           |ask_size|
++----------+------+--------+-----------------------+------------+-------------------+-----------------+--------+-----------------+--------+
+|2020-08-05|SYMA  |NASDAQ  |2020-08-05 05:36:55.284|1           |2020-08-05 05:30:00|76.10016521142818|100     |77.96479759087470|100     |
+|2020-08-05|SYMA  |NASDAQ  |2020-08-05 05:42:32.247|2           |2020-08-05 05:30:00|75.44372945251948|100     |75.94452858561046|100     |
+|2020-08-05|SYMA  |NASDAQ  |2020-08-05 05:48:06.767|3           |2020-08-05 05:30:00|78.84798564828422|100     |80.69114407667608|100     |
++----------+------+--------+-----------------------+------------+-------------------+-----------------+--------+-----------------+--------+
+only showing top 3 rows
+
+root
+ |-- trade_dt: date (nullable = true)
+ |-- symbol: string (nullable = true)
+ |-- exchange: string (nullable = true)
+ |-- event_tm: timestamp (nullable = true)
+ |-- event_seq_nb: integer (nullable = true)
+ |-- arrival_tm: timestamp (nullable = true)
+ |-- bid_pr: decimal(17,14) (nullable = true)
+ |-- bid_size: integer (nullable = true)
+ |-- ask_pr: decimal(17,14) (nullable = true)
+ |-- ask_size: integer (nullable = true)
+
+View job details at https://adb-4073974713364781.1.azuredatabricks.net/?o=4073974713364781#/setting/clusters/0317-203650-ring999/sparkUi
+View job details at https://adb-4073974713364781.1.azuredatabricks.net/?o=4073974713364781#/setting/clusters/0317-203650-ring999/sparkUi
+View job details at https://adb-4073974713364781.1.azuredatabricks.net/?o=4073974713364781#/setting/clusters/0317-203650-ring999/sparkUi
++----------+------+--------+-----------------------+------------+-----------------+---------------------+
+|trade_date|symbol|exchange|event_tm               |event_seq_nb|trade_pr         |moving_average       |
++----------+------+--------+-----------------------+------------+-----------------+---------------------+
+|2020-08-06|SYMA  |NASDAQ  |2020-08-06 17:33:38.812|100         |77.43719185388957|77.437191853889570000|
+|2020-08-06|SYMA  |NASDAQ  |2020-08-06 16:23:01.854|90          |77.81713801155259|77.817138011552590000|
+|2020-08-06|SYMA  |NASDAQ  |2020-08-06 15:09:38.472|80          |78.62378928250436|78.623789282504360000|
+|2020-08-06|SYMA  |NASDAQ  |2020-08-06 14:01:33.234|70          |76.97746831240718|76.977468312407180000|
+|2020-08-06|SYMA  |NASDAQ  |2020-08-06 12:43:23.372|60          |77.57371021517118|77.573710215171180000|
+|2020-08-06|SYMA  |NASDAQ  |2020-08-06 11:39:00.929|50          |77.62613181984351|77.626131819843510000|
+|2020-08-06|SYMA  |NASDAQ  |2020-08-06 10:27:08.62 |40          |75.84401002785360|75.844010027853600000|
+|2020-08-06|SYMA  |NASDAQ  |2020-08-06 09:09:29.883|30          |78.31461997164219|78.314619971642190000|
+|2020-08-06|SYMA  |NASDAQ  |2020-08-06 08:00:29.595|20          |77.09670488777135|77.096704887771350000|
+|2020-08-06|SYMA  |NASDAQ  |2020-08-06 06:42:21.079|10          |78.93245610745132|78.932456107451320000|
+|2020-08-06|SYMA  |NYSE    |2020-08-06 18:00:18.406|100         |76.30847130527823|76.308471305278230000|
+|2020-08-06|SYMA  |NYSE    |2020-08-06 16:49:10.946|90          |75.71484703599852|75.714847035998520000|
+|2020-08-06|SYMA  |NYSE    |2020-08-06 15:28:22.629|80          |76.52898141486219|76.528981414862190000|
+|2020-08-06|SYMA  |NYSE    |2020-08-06 14:14:28.899|70          |78.23471404145394|78.234714041453940000|
+|2020-08-06|SYMA  |NYSE    |2020-08-06 12:58:58.633|60          |78.32363638620622|78.323636386206220000|
+|2020-08-06|SYMA  |NYSE    |2020-08-06 11:39:08.521|50          |76.37442161362104|76.374421613621040000|
+|2020-08-06|SYMA  |NYSE    |2020-08-06 10:27:13.014|40          |77.11551864232810|77.115518642328100000|
+|2020-08-06|SYMA  |NYSE    |2020-08-06 09:11:57.308|30          |76.89963550257767|76.899635502577670000|
+|2020-08-06|SYMA  |NYSE    |2020-08-06 08:00:11.545|20          |76.16119459402981|76.161194594029810000|
+|2020-08-06|SYMA  |NYSE    |2020-08-06 06:49:37.345|10          |74.49377354690710|74.493773546907100000|
++----------+------+--------+-----------------------+------------+-----------------+---------------------+
+only showing top 20 rows
+
+View job details at https://adb-4073974713364781.1.azuredatabricks.net/?o=4073974713364781#/setting/clusters/0317-203650-ring999/sparkUi
++------+--------+----------------------+----+
+|symbol|exchange|last_trade_pr         |rank|
++------+--------+----------------------+----+
+|SYMA  |NASDAQ  |77.246757055452060000 |1   |
+|SYMA  |NYSE    |77.786110243753840000 |1   |
+|SYMB  |NASDAQ  |35.537260864906860000 |1   |
+|SYMB  |NYSE    |33.956288411627950000 |1   |
+|SYMC  |NASDAQ  |158.020322834886710000|1   |
+|SYMC  |NYSE    |160.619492627662080000|1   |
++------+--------+----------------------+----+
+
+21/03/18 12:21:50 WARN HintErrorLogger: Count not find relation 'prev_temp_last_trade' specified in hint 'BROADCAST(prev_temp_last_trade)'.
+View job details at https://adb-4073974713364781.1.azuredatabricks.net/?o=4073974713364781#/setting/clusters/0317-203650-ring999/sparkUi
+[Stage 231:>                                                        (0 + 1) / 1]
+(dbconnect) C:\Step 4 Analytical ETL\eod-data-load>SUCCESS: The process with PID 3484 (child process of PID 9452) has been terminated.
+SUCCESS: The process with PID 9452 (child process of PID 8084) has been terminated.
+SUCCESS: The process with PID 8084 (child process of PID 23296) has been terminated.
+
+
+
+
+
+
+
+
+
+
+
+
+
